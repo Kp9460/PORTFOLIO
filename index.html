@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamlesh Kumar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="profile-circle">
+                KK
+            </div>
+            <h1>Kamlesh Kumar</h1>
+            <div class="typing-text">
+                <span id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p>📍 Udaipur, Rajasthan, India</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>🎯 Top Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-card" onclick="showSkillAlert('HTML')">HTML</div>
+                <div class="skill-card" onclick="showSkillAlert('CSS')">CSS (Cascading Style Sheets)</div>
+                <div class="skill-card" onclick="showSkillAlert('Web Development')">Javascript</div>
+                <div class="skill-card" onclick="showSkillAlert('Responsive Design')">Responsive Design</div>
+                <div class="skill-card" onclick="showSkillAlert('UI/UX Basics')">UI/UX Basics</div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2>📚 Education</h2>
+            <div class="education-item">
+                <div class="edu-year">2021 - 2025</div>
+                <div class="edu-details">
+                    <h3>Aravali Institute of Technical Studies, Udaipur</h3>
+                    <p>Bachelor of Technology (B.Tech) - Completed in 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section">
+            <h2>👨‍💻 About Me</h2>
+            <p>I'm a passionate web developer from Udaipur, Rajasthan, with strong skills in HTML and CSS. I love creating beautiful, responsive websites that provide excellent user experiences across all devices. Currently exploring modern web technologies and looking forward to collaborating on exciting projects.</p>
+            <p style="margin-top: 1rem;">My goal is to build websites that are not only visually appealing but also accessible and performant for all users.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section" id="contact">
+            <h2>📫 Contact Me</h2>
+            <div class="contact-grid">
+                <a href="mailto:parmarks800@gmail.com" class="contact-card" onclick="showToast('Email copied!')">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>parmarks800@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/kamlesh-kumar-a82a73345" target="_blank" class="contact-card" onclick="showToast('Opening LinkedIn...')">
+                    <div class="contact-icon">🔗</div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/kamlesh-kumar-a82a73345</p>
+                    </div>
+                </a>
+                <div class="contact-card" onclick="showToast('📍 Udaipur, Rajasthan')">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-info">
+                        <h3>Location</h3>
+                        <p>Udaipur, Rajasthan, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Projects Section -->
+        <div class="section">
+            <h2>🚀 Featured Projects</h2>
+            <div class="skills-grid">
+                <div class="skill-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);" onclick="showProjectDetails('Responsive Portfolio')">
+                    Responsive Portfolio
+                </div>
+                <div class="skill-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);" onclick="showProjectDetails('Landing Pages')">
+                    Landing Pages
+                </div>
+                <div class="skill-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);" onclick="showProjectDetails('CSS Animations')">
+                    CSS Animations
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 Kamlesh Kumar. Built with 💻 and ❤️ | Fully Responsive Portfolio</p>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+   <script src="script.js"></script>
+</body>
+</html>
