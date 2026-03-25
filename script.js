@@ -1,8 +1,8 @@
 // Typing Animation
         const texts = [
             "B.Tech Graduate | Aravali Institute of Technical Studies, Udaipur (2025)",
-            "Web Developer | HTML & CSS Expert",
-            "Responsive Design Specialist"
+            "Web Developer | HTML , CSS & JS ",
+            "Responsive Design"
         ];
         let count = 0;
         let index = 0;
